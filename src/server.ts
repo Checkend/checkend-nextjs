@@ -58,7 +58,7 @@ export function initServer(): void {
       captureUnhandledRejections: false,
       beforeNotify: config.beforeSend
         ? [
-            (notice) => {
+            (notice: unknown) => {
               const result = applyBeforeSend(notice as any)
               return result !== null
             },

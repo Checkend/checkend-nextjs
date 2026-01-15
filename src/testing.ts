@@ -26,7 +26,7 @@
  * ```
  */
 
-import { init, reset, type CheckendNextConfig, type CheckendEvent } from './config'
+import { init, reset, type CheckendNextConfig } from './config'
 
 /**
  * A captured notice from Checkend during test mode

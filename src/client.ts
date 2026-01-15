@@ -57,7 +57,7 @@ export async function initClient(): Promise<void> {
       debug: config.debug,
       beforeNotify: config.beforeSend
         ? [
-            (notice) => {
+            (notice: unknown) => {
               const result = applyBeforeSend(notice as any)
               return result !== null
             },
